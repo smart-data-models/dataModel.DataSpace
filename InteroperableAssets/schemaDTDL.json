@@ -1,0 +1,409 @@
+{
+    "@id": "dtmi:com:ngsi-ld:InteroperableAssets;0",
+    "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
+    "comment": "Smart Data Models - SUBJECT / DATAMODEL adapted to DTDL from smartdatamodels.org. Source: https://raw.githubusercontent.com/smart-data-models/dataModel.DataSpace/master/InteroperableAssets/schema.json",
+    "description": "List of the interoperable assets that a data space disclose to other data space to enable the federation or interconnection",
+    "displayName": "InteroperableAssets",
+    "contents": [
+        {
+            "name": "alternateName",
+            "writable": true,
+            "displayName": "alternateName",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "An alternative name for this item"
+        },
+        {
+            "name": "areaServed",
+            "writable": true,
+            "displayName": "areaServed",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "The geographic area where a service or offered item is provided"
+        },
+        {
+            "name": "dataProvider",
+            "writable": true,
+            "displayName": "dataProvider",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A sequence of characters identifying the provider of the harmonised data entity"
+        },
+        {
+            "name": "dateCreated",
+            "writable": true,
+            "displayName": "dateCreated",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Entity creation timestamp. This will usually be allocated by the storage platform"
+        },
+        {
+            "name": "dateModified",
+            "writable": true,
+            "displayName": "dateModified",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Timestamp of the last modification of the entity. This will usually be allocated by the storage platform"
+        },
+        {
+            "name": "description",
+            "writable": true,
+            "displayName": "description",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A description of this item"
+        },
+        {
+            "name": "location",
+            "writable": true,
+            "displayName": "location"
+        },
+        {
+            "name": "name",
+            "writable": true,
+            "displayName": "name",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "The name of this item"
+        },
+        {
+            "name": "seeAlso",
+            "writable": true,
+            "displayName": "seeAlso"
+        },
+        {
+            "name": "source",
+            "writable": true,
+            "displayName": "source",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "dataExchangeProtocols",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "object"
+            },
+            "comment": "List of the data exchange protocols enabled by the data space to be used in the connection with other participants",
+            "displayName": "dataExchangeProtocols"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "dataModelSources",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "object"
+            },
+            "comment": "List of the semantic data sources potentially used by the data assets in the data space",
+            "displayName": "dataModelSources"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "owner",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "string"
+            },
+            "comment": "A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)",
+            "displayName": "owner"
+        },
+        {
+            "@type": "object",
+            "name": "address",
+            "comment": "The mailing address",
+            "displayName": "address",
+            "fields": [
+                {
+                    "name": "addressCountry",
+                    "schema": "string"
+                },
+                {
+                    "name": "addressLocality",
+                    "schema": "string"
+                },
+                {
+                    "name": "addressRegion",
+                    "schema": "string"
+                },
+                {
+                    "name": "district",
+                    "schema": "string"
+                },
+                {
+                    "name": "postOfficeBoxNumber",
+                    "schema": "string"
+                },
+                {
+                    "name": "postalCode",
+                    "schema": "string"
+                },
+                {
+                    "name": "streetAddress",
+                    "schema": "string"
+                },
+                {
+                    "name": "streetNr",
+                    "schema": "string"
+                }
+            ]
+        },
+        {
+            "@type": "Telemetry",
+            "name": "dataSpaceIdentifier",
+            "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                    {
+                        "name": "AD4GD",
+                        "displayName": "AD4GD",
+                        "enumValue": 1
+                    },
+                    {
+                        "name": "AgDataValue",
+                        "displayName": "AgDataValue",
+                        "enumValue": 2
+                    },
+                    {
+                        "name": "AgriDataSpace",
+                        "displayName": "AgriDataSpace",
+                        "enumValue": 3
+                    },
+                    {
+                        "name": "AI4EOSC",
+                        "displayName": "AI4EOSC",
+                        "enumValue": 4
+                    },
+                    {
+                        "name": "AI4Europeana",
+                        "displayName": "AI4Europeana",
+                        "enumValue": 5
+                    },
+                    {
+                        "name": "AquaINFRA",
+                        "displayName": "AquaINFRA",
+                        "enumValue": 6
+                    },
+                    {
+                        "name": "B-Cubed",
+                        "displayName": "B-Cubed",
+                        "enumValue": 7
+                    },
+                    {
+                        "name": "Blue-Cloud2026",
+                        "displayName": "Blue-Cloud2026",
+                        "enumValue": 8
+                    },
+                    {
+                        "name": "CrackSense",
+                        "displayName": "CrackSense",
+                        "enumValue": 9
+                    },
+                    {
+                        "name": "CRAFT-OA",
+                        "displayName": "CRAFT-OA",
+                        "enumValue": 10
+                    },
+                    {
+                        "name": "DataCellar",
+                        "displayName": "DataCellar",
+                        "enumValue": 11
+                    },
+                    {
+                        "name": "DataSpace4.0",
+                        "displayName": "DataSpace4.0",
+                        "enumValue": 12
+                    },
+                    {
+                        "name": "DATES",
+                        "displayName": "DATES",
+                        "enumValue": 13
+                    },
+                    {
+                        "name": "DE-BIAS",
+                        "displayName": "DE-BIAS",
+                        "enumValue": 14
+                    },
+                    {
+                        "name": "deployEMDS",
+                        "displayName": "deployEMDS",
+                        "enumValue": 15
+                    },
+                    {
+                        "name": "Divine",
+                        "displayName": "Divine",
+                        "enumValue": 16
+                    },
+                    {
+                        "name": "DS4SSCC",
+                        "displayName": "DS4SSCC",
+                        "enumValue": 17
+                    },
+                    {
+                        "name": "DS4SSCC-DEP",
+                        "displayName": "DS4SSCC-DEP",
+                        "enumValue": 18
+                    },
+                    {
+                        "name": "EDDI",
+                        "displayName": "EDDI",
+                        "enumValue": 19
+                    },
+                    {
+                        "name": "EOSC4Cancer",
+                        "displayName": "EOSC4Cancer",
+                        "enumValue": 20
+                    },
+                    {
+                        "name": "EOSC-ENTRUST",
+                        "displayName": "EOSC-ENTRUST",
+                        "enumValue": 21
+                    },
+                    {
+                        "name": "EOSCBeyond",
+                        "displayName": "EOSCBeyond",
+                        "enumValue": 22
+                    },
+                    {
+                        "name": "EOSCFocus",
+                        "displayName": "EOSCFocus",
+                        "enumValue": 23
+                    },
+                    {
+                        "name": "EuroScienceGateway",
+                        "displayName": "EuroScienceGateway",
+                        "enumValue": 24
+                    },
+                    {
+                        "name": "Eureka3D",
+                        "displayName": "Eureka3D",
+                        "enumValue": 25
+                    },
+                    {
+                        "name": "EVERSE",
+                        "displayName": "EVERSE",
+                        "enumValue": 26
+                    },
+                    {
+                        "name": "FAIR-EASE",
+                        "displayName": "FAIR-EASE",
+                        "enumValue": 27
+                    },
+                    {
+                        "name": "FAIR-IMPACT",
+                        "displayName": "FAIR-IMPACT",
+                        "enumValue": 28
+                    },
+                    {
+                        "name": "FAIRCORE4EOSC",
+                        "displayName": "FAIRCORE4EOSC",
+                        "enumValue": 29
+                    },
+                    {
+                        "name": "FAIRiCUBE",
+                        "displayName": "FAIRiCUBE",
+                        "enumValue": 30
+                    },
+                    {
+                        "name": "GDI",
+                        "displayName": "GDI",
+                        "enumValue": 31
+                    },
+                    {
+                        "name": "GraspOS",
+                        "displayName": "GraspOS",
+                        "enumValue": 32
+                    },
+                    {
+                        "name": "GREAT",
+                        "displayName": "GREAT",
+                        "enumValue": 33
+                    },
+                    {
+                        "name": "IntNET",
+                        "displayName": "IntNET",
+                        "enumValue": 34
+                    },
+                    {
+                        "name": "OMEGA-X",
+                        "displayName": "OMEGA-X",
+                        "enumValue": 35
+                    },
+                    {
+                        "name": "OSCARS",
+                        "displayName": "OSCARS",
+                        "enumValue": 36
+                    },
+                    {
+                        "name": "OSTrails",
+                        "displayName": "OSTrails",
+                        "enumValue": 37
+                    },
+                    {
+                        "name": "PrepDSpace4Mobility",
+                        "displayName": "PrepDSpace4Mobility",
+                        "enumValue": 38
+                    },
+                    {
+                        "name": "RAISE",
+                        "displayName": "RAISE",
+                        "enumValue": 39
+                    },
+                    {
+                        "name": "RDATIGER",
+                        "displayName": "RDATIGER",
+                        "enumValue": 40
+                    },
+                    {
+                        "name": "ScaleAgData",
+                        "displayName": "ScaleAgData",
+                        "enumValue": 41
+                    },
+                    {
+                        "name": "SciLake",
+                        "displayName": "SciLake",
+                        "enumValue": 42
+                    },
+                    {
+                        "name": "Skills4EOSC",
+                        "displayName": "Skills4EOSC",
+                        "enumValue": 43
+                    },
+                    {
+                        "name": "SM4RTENANCE",
+                        "displayName": "SM4RTENANCE",
+                        "enumValue": 44
+                    },
+                    {
+                        "name": "SIESTA",
+                        "displayName": "SIESTA",
+                        "enumValue": 45
+                    },
+                    {
+                        "name": "Synergies",
+                        "displayName": "Synergies",
+                        "enumValue": 46
+                    },
+                    {
+                        "name": "TITAN",
+                        "displayName": "TITAN",
+                        "enumValue": 47
+                    },
+                    {
+                        "name": "UNDERPIN",
+                        "displayName": "UNDERPIN",
+                        "enumValue": 48
+                    },
+                    {
+                        "name": "USAGE",
+                        "displayName": "USAGE",
+                        "enumValue": 49
+                    }
+                ]
+            }
+        }
+    ]
+}
