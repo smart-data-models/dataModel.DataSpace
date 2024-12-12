@@ -1,0 +1,20 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ngsi-ld: <https://uri.etsi.org/ngsi-ld/> .
+@prefix ns1: <https://smartdatamodels.org/dataModel.DataSpace/> .
+@prefix ns2: <https://smartdatamodels.org/> .
+
+<urn:ngsi-ld:InteroperableAssets:id:WGEQ:22085426> a ns1:InteroperableAssets ;
+    dcterms:description [ a <file:///home/aabella/PycharmProjects/WATERVERSE-to-Turtle/Property> ] ;
+    ns2:address [ a <file:///home/aabella/PycharmProjects/WATERVERSE-to-Turtle/Property> ] ;
+    ns2:alternateName [ a <file:///home/aabella/PycharmProjects/WATERVERSE-to-Turtle/Property> ] ;
+    ns2:areaServed [ a <file:///home/aabella/PycharmProjects/WATERVERSE-to-Turtle/Property> ] ;
+    ns1:dataExchangeProtocols [ a <file:///home/aabella/PycharmProjects/WATERVERSE-to-Turtle/Property> ] ;
+    ns1:dataModelSources [ a <file:///home/aabella/PycharmProjects/WATERVERSE-to-Turtle/Property> ] ;
+    ns1:dataSpaceIdentifier [ a <file:///home/aabella/PycharmProjects/WATERVERSE-to-Turtle/Property> ] ;
+    ns2:dataProvider [ a <file:///home/aabella/PycharmProjects/WATERVERSE-to-Turtle/Property> ] ;
+    ns2:dateCreated [ a <file:///home/aabella/PycharmProjects/WATERVERSE-to-Turtle/Property> ] ;
+    ns2:dateModified [ a <file:///home/aabella/PycharmProjects/WATERVERSE-to-Turtle/Property> ] ;
+    ns2:name [ a <file:///home/aabella/PycharmProjects/WATERVERSE-to-Turtle/Property> ] ;
+    ns2:source [ a <file:///home/aabella/PycharmProjects/WATERVERSE-to-Turtle/Property> ] ;
+    ngsi-ld:location [ a <file:///home/aabella/PycharmProjects/WATERVERSE-to-Turtle/GeoProperty> ] .
+
