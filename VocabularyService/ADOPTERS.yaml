@@ -1,0 +1,10 @@
+description: This is a compilation list of the current adopters of the data model VocabularyService of the Subject dataModel.DataSpace.
+currentAdopters:
+-
+ adopter:  https://toolbox.dssc.eu/
+ description:
+ mail:
+ organization: Data Spaces Business Alliance
+ project: DSSC
+ comments:
+ startDate: 2025-07-01

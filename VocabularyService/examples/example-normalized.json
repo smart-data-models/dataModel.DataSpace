@@ -1,0 +1,123 @@
+{
+  "id": "urn:ngsi-ld:VocabularyService:VocabServ-001",
+  "type": "VocabularyService",
+  "title": {
+    "type": "Text",
+    "value": "OntoManager Pro"
+  },
+  "description": {
+    "type": "Text",
+    "value": "A professional service for managing and publishing enterprise ontologies and data schemas."
+  },
+  "url": {
+    "type": "URL",
+    "value": "https://example.com/ontomanager"
+  },
+  "hasVersion": {
+    "type": "Text",
+    "value": "2.5.0"
+  },
+  "maintainer": {
+    "type": "StructuredValue",
+    "value": {
+      "name": "Semantic Solutions Inc.",
+      "url": "https://semanticsol.com"
+    }
+  },
+  "dataspaceProductPurpose": {
+    "type": "Text",
+    "value": "To provide a centralized, governed repository for data models, ensuring semantic interoperability across the data space."
+  },
+  "documentation": {
+    "type": "URL",
+    "value": "https://docs.semanticsol.com/ontomanager"
+  },
+  "license": {
+    "type": "URL",
+    "value": "https://example.com/licenses/commercial-eula"
+  },
+  "licenseDeclared": {
+    "type": "Text",
+    "value": "UNLICENSED"
+  },
+  "dataspaceServiceCategory": {
+    "type": "Text",
+    "value": "Federation services"
+  },
+  "dataspaceService": {
+    "type": "Property",
+    "value": "Vocabulary Services"
+  },
+  "dataspaceBuildingBlock": {
+    "type": "Property",
+    "value": "Semantic Interoperability"
+  },
+  "technologyReadinessLevel": {
+    "type": "Number",
+    "value": 9
+  },
+  "dataModelDomain": {
+    "type": "array",
+    "value": [
+      "Healthcare",
+      "Finance"
+    ]
+  },
+  "dataModelSpecificationType": {
+    "type": "Text",
+    "value": "Ontology"
+  },
+  "supportedSyntaxes": {
+    "type": "Property",
+    "value": [
+      "OWL",
+      "RDFS",
+      "SKOS",
+      "SHACL"
+    ]
+  },
+  "importFormats": {
+    "type": "array",
+    "value": [
+      "application/rdf+xml",
+      "text/turtle",
+      "application/vnd.ms-excel"
+    ]
+  },
+  "exportFormats": {
+    "type": "array",
+    "value": [
+      "application/json",
+      "application/rdf+xml",
+      "text/turtle"
+    ]
+  },
+  "dataModelVersioning": {
+    "type": "Text",
+    "value": "Full History"
+  },
+  "governanceFeatures": {
+    "type": "Text",
+    "value": "Role-based access control, working groups workflows, change request management."
+  },
+  "publicationAccessibility": {
+    "type": "array",
+    "value": [
+      "Persistent URIs",
+      "SPARQL endpoint",
+      "Web Portal"
+    ]
+  },
+  "validationCapabilities": {
+    "type": "Text",
+    "value": "SHACL validator"
+  },
+  "supportedStandards": {
+    "type": "Text",
+    "value": "ISO 15926"
+  },
+  "mappingFunctionalities": {
+    "type": "Text",
+    "value": "Provides a graphical interface for creating and managing mappings between different ontologies."
+  }
+}
