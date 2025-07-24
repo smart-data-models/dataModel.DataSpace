@@ -7,16 +7,26 @@
 [document généré automatiquement] (https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 <!-- /15-License -->  
 <!-- 20-Description -->  
+Description globale : **Modèle de données pour un outil d'agent participant (connecteur). Cet outil peut mettre en œuvre plusieurs services tels que le magasin de justificatifs, la négociation de contrats, le processus de transfert et le plan de données. Il étend le modèle de base ToolInformation**.  
+version : 0.0.1  
 <!-- /20-Description -->  
 <!-- 30-PropertiesList -->  
 
 ## Liste des propriétés  
 
 <sup><sub>[*] S'il n'y a pas de type dans un attribut, c'est parce qu'il peut avoir plusieurs types ou différents formats/modèles</sub></sup>.  
-<!-- /30-PropertiesList -->  
+- `additionalBuildingBlock[*]`: Fonctions supplémentaires des blocs de construction offertes par cet outil. Correspond à tcat:additionalBuildingBlock  - `additionalBuildingBlockDescription[*]`: Description textuelle des fonctionnalités supplémentaires. Correspond à tcat:additionalBuildingBlockDescription  - `businessOfferings[*]`: Description des offres commerciales telles que les services gérés, SaaS ou l'assistance. Correspond à tcat:businessOfferings  - `contractNegotiation[*]`: Détails des capacités de négociation des contrats.  - `credentialStore[object]`: Détails des capacités du magasin d'informations d'identification.  	- `vcDataModel[*]`: Détails du (des) modèle(s) de données utilisé(s) pour les références vérifiables.    
+	- `vcIssuanceAPI[*]`: Détails de l'API utilisée pour la délivrance des références vérifiables.    
+	- `vcPresentationAPI[*]`: Détails de l'API de données utilisée pour la délivrance des références vérifiables.    
+- `dataPlane[array]`: Détails des capacités du plan de données, définissant une ou plusieurs API d'échange de données.  - `dataspaceBuildingBlock[*]`: Le(s) bloc(s) de construction de l'espace de données auquel cet outil est lié. Correspond à tcat:dataspaceBuildingBlock  - `dataspaceProductPurpose[string]`: Description de la manière dont la mise en œuvre contribue aux objectifs du DSSC. Correspond à tcat:dataspaceProductPurpose  - `dataspaceService[*]`: Le(s) service(s) spécifique(s) de l'espace de données que cet outil met en oeuvre. Correspond à tcat:dataspaceService  - `dataspaceServiceCategory[string]`: La catégorie du service d'espace de données. Correspond à tcat:dataspaceServiceCategory  - `dependencies[*]`: Dépendances ou conditions préalables par rapport à d'autres outils ou composants  - `deploymentsInOperation[*]`: Vue d'ensemble ou liens vers l'utilisation/déploiement de l'outil dans les opérations. Correspond à tcat:existingDeployments  - `description[string]`: Un bref aperçu de l'objectif principal et des caractéristiques clés de la mise en œuvre. Correspond à dc:description  - `documentation[*]`: Liens directs vers les documents pertinents (page produit, référentiel logiciel, spécification API, etc.) Correspond à schema:documentation  - `domain[*]`: Le(s) domaine(s), secteur(s) ou industrie(s) pour lesquels l'outil est pertinent  - `functionalApplicationArea[*]`: Les applications auxquelles l'outil est destiné  - `geographicalApplicationArea[*]`: la région géographique à laquelle l'outil est destiné (par exemple, le monde, l'Europe)  - `hasVersion[string]`: Les versions de l'implémentation. Les valeurs doivent être conformes à SemVer 2.0. Correspond à dc:hasVersion  - `id[*]`: Identifiant unique de l'entité  - `image[*]`: Images ou captures d'écran pertinentes de l'interface utilisateur de l'outil. Correspond à schema:image  - `keywords[*]`: Mots-clés qui catégorisent l'outil, de préférence à partir d'un vocabulaire contrôlé. Correspond à schema:keywords  - `license[*]`: Liens vers les détails de la licence pour l'accès et l'utilisation de l'outil. Correspond à schema:license  - `licenseDeclared[*]`: Type de licence pouvant faire l'objet d'une recherche automatique. La valeur doit être conforme à la liste des licences SPDX (https://spdx.org/licenses/). Correspond à spdx.org:licenseDeclared  - `maintainer[object]`: L'organisation qui maintient l'implémentation. Correspond à schema:maintainer  	- `logo[uri]`: URL du logo de l'organisation. Correspond à schema:logo    
+	- `name[string]`: Nom de l'organisation    
+	- `url[uri]`: URL du site web de l'organisation    
+- `similarTools[*]`: Une liste d'outils similaires ou concurrents  - `supportingAttachments[array]`: Pièces jointes supplémentaires ou liens pour plus d'informations  - `technologyReadinessLevel[number]`: Le niveau de maturité technologique (TRL) de l'outil. Correspond à tcat:technologyReadiness  - `title[string]`: Le nom de l'outil ou de l'implémentation. Correspond à dc:title  - `transferProcess[object]`: Détails des capacités du processus de transfert.  	- `authorization[*]`: Détails des mécanismes d'autorisation utilisés dans le cadre du processus de transfert.    
+	- `protocol[*]`: Détails du (des) protocole(s) définissant le processus de transfert.    
+- `trlJustification[string]`: Justification du TRL déclaré. Correspond à tcat:technologyReadinessDescription  - `type[string]`: Type d'entité NGSI. Il doit s'agir de ParticipantAgent.  - `url[uri]`: Une URL vers une page web contenant plus d'informations sur l'outil. Correspond à foaf:homepage ou schema:url  <!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 Propriétés requises  
-- Aucune propriété requise  <!-- /35-RequiredProperties -->  
+- `id`  - `type`  <!-- /35-RequiredProperties -->  
 <!-- 40-NotesYaml -->  
 <!-- /40-NotesYaml -->  
 <!-- 50-DataModelHeader -->  
