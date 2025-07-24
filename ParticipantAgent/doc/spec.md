@@ -7,16 +7,26 @@
 [document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 <!-- /15-License -->  
 <!-- 20-Description -->  
+Global description: **A data model for a Participant Agent (Connector) tool. This tool can implement multiple services like Credential Store, Contract Negotiation, Transfer Process, and Data Plane. It extends the base ToolInformation model.**  
+version: 0.0.1  
 <!-- /20-Description -->  
 <!-- 30-PropertiesList -->  
 
 ## List of properties  
 
 <sup><sub>[*] If there is not a type in an attribute is because it could have several types or different formats/patterns</sub></sup>  
-<!-- /30-PropertiesList -->  
+- `additionalBuildingBlock[*]`: Additional building blocks functions offered by this tool. Corresponds to tcat:additionalBuildingBlock  - `additionalBuildingBlockDescription[*]`: Textual description of additional functionalities. Corresponds to tcat:additionalBuildingBlockDescription  - `businessOfferings[*]`: Description of business offerings like managed services, SaaS, or support. Corresponds to tcat:businessOfferings  - `contractNegotiation[*]`: Details of the contract negotiation capabilities.  - `credentialStore[object]`: Details of the credential store capabilities.  	- `vcDataModel[*]`: Details of data model(s) used for Verifiable Credentials.    
+	- `vcIssuanceAPI[*]`: Details of the API(s) used for issuing Verifiable Credentials.    
+	- `vcPresentationAPI[*]`: Details of data API(s) used for issuing Verifiable Credentials.    
+- `dataPlane[array]`: Details of the data plane capabilities, defining one or more data exchange APIs.  - `dataspaceBuildingBlock[*]`: The data space building block(s) this tool is related to. Corresponds to tcat:dataspaceBuildingBlock  - `dataspaceProductPurpose[string]`: Description of how the implementation contributes to DSSC's objectives. Corresponds to tcat:dataspaceProductPurpose  - `dataspaceService[*]`: The specific data space service(s) this tool implements. Corresponds to tcat:dataspaceService  - `dataspaceServiceCategory[string]`: The category of the data space service. Corresponds to tcat:dataspaceServiceCategory  - `dependencies[*]`: Dependencies or prerequisites on other tools or components  - `deploymentsInOperation[*]`: Overview or links to usage/deployments of the tool in operations. Corresponds to tcat:existingDeployments  - `description[string]`: A brief overview of the primary focus and key features of the implementation. Corresponds to dc:description  - `documentation[*]`: Direct links to relevant documents (product page, software repository, API spec, etc.). Corresponds to schema:documentation  - `domain[*]`: The domain(s), sector(s), or industry/ies for which the tool is relevant  - `functionalApplicationArea[*]`: The applications for which the tool is intended  - `geographicalApplicationArea[*]`: The geographical region for which the tool is intended (e.g., global, Europe)  - `hasVersion[string]`: The versions of the implementation. Values must adhere to SemVer 2.0. Corresponds to dc:hasVersion  - `id[*]`: Unique identifier of the entity  - `image[*]`: Relevant pictures or screenshots of the tool’s user interface. Corresponds to schema:image  - `keywords[*]`: Keywords that categorize the tool, preferably from a controlled vocabulary. Corresponds to schema:keywords  - `license[*]`: Links to the license details for accessing and using the tool. Corresponds to schema:license  - `licenseDeclared[*]`: The machine-searchable license type. Value must adhere to SPDX license list (https://spdx.org/licenses/). Corresponds to spdx.org:licenseDeclared  - `maintainer[object]`: The organization that maintains the implementation. Corresponds to schema:maintainer  	- `logo[uri]`: URL of the organization's logo. Corresponds to schema:logo    
+	- `name[string]`: Name of the organization    
+	- `url[uri]`: URL of the organization's website    
+- `similarTools[*]`: A list of similar or competing tools  - `supportingAttachments[array]`: Additional attachments or links for more information  - `technologyReadinessLevel[number]`: The Technology Readiness Level (TRL) of the tool. Corresponds to tcat:technologyReadiness  - `title[string]`: The name of the tool/implementation. Corresponds to dc:title  - `transferProcess[object]`: Details of the transfer process capabilities.  	- `authorization[*]`: Details of authorization mechanisms used behind the transfer process.    
+	- `protocol[*]`: Details of protocol(s) defining the transfer process.    
+- `trlJustification[string]`: Justification for the declared TRL. Corresponds to tcat:technologyReadinessDescription  - `type[string]`: NGSI entity type. It has to be ParticipantAgent.  - `url[uri]`: A URL to a webpage with more information about the tool. Corresponds to foaf:homepage or schema:url  <!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 Required properties  
-- No required properties  <!-- /35-RequiredProperties -->  
+- `id`  - `type`  <!-- /35-RequiredProperties -->  
 <!-- 40-NotesYaml -->  
 <!-- /40-NotesYaml -->  
 <!-- 50-DataModelHeader -->  
