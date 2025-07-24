@@ -8,7 +8,7 @@
   "type": "object",
   "allOf": [
     {
-      "$ref": "https://raw.githubusercontent.com/smart-data-models/dataModel.DataSpace/DataSpace-schema.json#/definitions/DataSovereignity-Commons"
+      "$ref": "https://raw.githubusercontent.com/smart-data-models/dataModel.DataSpace/master/DataSpace-schema.json#/definitions/DataSovereignity-Commons"
     },
     {
       "properties": {
@@ -33,11 +33,11 @@
                 {
                   "type": "array",
                   "items": {
-                    "$ref": "https://raw.githubusercontent.com/smart-data-models/dataModel./DataSpace/DataSpace-schema.json/definitions/specification"
+                    "$ref": "https://raw.githubusercontent.com/smart-data-models/dataModel.DataSpace/master/DataSpace-schema.json#/definitions/specification"
                   }
                 },
                 {
-                  "$ref": "https://raw.githubusercontent.com/smart-data-models/dataModel./DataSpace/DataSpace-schema.json/definitions/specification"
+                  "$ref": "https://raw.githubusercontent.com/smart-data-models/dataModel.DataSpace/master/DataSpace-schema.json#/definitions/specification"
                 }
               ]
             },
@@ -48,11 +48,11 @@
                 {
                   "type": "array",
                   "items": {
-                    "$ref": "https://raw.githubusercontent.com/smart-data-models/incubated/refs/heads/master/CROSSSECTOR/DataSovereignty/ParticipantAgent/schema.json#/definitions/Specification"
+                    "$ref": "https://raw.githubusercontent.com/smart-data-models/dataModel.DataSpace/master/DataSpace-schema.json#/definitions/specification"
                   }
                 },
                 {
-                  "$ref": "https://raw.githubusercontent.com/smart-data-models/incubated/refs/heads/master/CROSSSECTOR/DataSovereignty/ParticipantAgent/schema.json#/definitions/Specification"
+                  "$ref": "https://raw.githubusercontent.com/smart-data-models/dataModel.DataSpace/master/DataSpace-schema.json#/definitions/specification"
                 }
               ]
             },
@@ -63,11 +63,11 @@
                 {
                   "type": "array",
                   "items": {
-                    "$ref": "https://raw.githubusercontent.com/smart-data-models/incubated/refs/heads/master/CROSSSECTOR/DataSovereignty/ParticipantAgent/schema.json#/definitions/Specification"
+                    "$ref": "https://raw.githubusercontent.com/smart-data-models/dataModel.DataSpace/master/DataSpace-schema.json#/definitions/specification"
                   }
                 },
                 {
-                  "$ref": "https://raw.githubusercontent.com/smart-data-models/incubated/refs/heads/master/CROSSSECTOR/DataSovereignty/ParticipantAgent/schema.json#/definitions/Specification"
+                  "$ref": "https://raw.githubusercontent.com/smart-data-models/dataModel.DataSpace/master/DataSpace-schema.json#/definitions/specification"
                 }
               ]
             }
@@ -80,11 +80,11 @@
             {
               "type": "array",
               "items": {
-                "$ref": "https://raw.githubusercontent.com/smart-data-models/incubated/refs/heads/master/CROSSSECTOR/DataSovereignty/ParticipantAgent/schema.json#/definitions/Specification"
+                "$ref": "https://raw.githubusercontent.com/smart-data-models/dataModel.DataSpace/master/DataSpace-schema.json#/definitions/specification"
               }
             },
             {
-              "$ref": "https://raw.githubusercontent.com/smart-data-models/incubated/refs/heads/master/CROSSSECTOR/DataSovereignty/ParticipantAgent/schema.json#/definitions/Specification"
+              "$ref": "https://raw.githubusercontent.com/smart-data-models/dataModel.DataSpace/master/DataSpace-schema.json#/definitions/specification"
             }
           ]
         },
@@ -99,11 +99,11 @@
                 {
                   "type": "array",
                   "items": {
-                    "$ref": "https://raw.githubusercontent.com/smart-data-models/incubated/refs/heads/master/CROSSSECTOR/DataSovereignty/ParticipantAgent/schema.json#/definitions/Specification"
+                    "$ref": "https://raw.githubusercontent.com/smart-data-models/dataModel.DataSpace/master/DataSpace-schema.json#/definitions/specification"
                   }
                 },
                 {
-                  "$ref": "https://raw.githubusercontent.com/smart-data-models/incubated/refs/heads/master/CROSSSECTOR/DataSovereignty/ParticipantAgent/schema.json#/definitions/Specification"
+                  "$ref": "https://raw.githubusercontent.com/smart-data-models/dataModel.DataSpace/master/DataSpace-schema.json#/definitions/specification"
                 }
               ]
             },
@@ -114,11 +114,11 @@
                 {
                   "type": "array",
                   "items": {
-                    "$ref": "https://raw.githubusercontent.com/smart-data-models/incubated/refs/heads/master/CROSSSECTOR/DataSovereignty/ParticipantAgent/schema.json#/definitions/Specification"
+                    "$ref": "https://raw.githubusercontent.com/smart-data-models/dataModel.DataSpace/master/DataSpace-schema.json#/definitions/specification"
                   }
                 },
                 {
-                  "$ref": "https://raw.githubusercontent.com/smart-data-models/incubated/refs/heads/master/CROSSSECTOR/DataSovereignty/ParticipantAgent/schema.json#/definitions/Specification"
+                  "$ref": "https://raw.githubusercontent.com/smart-data-models/dataModel.DataSpace/master/DataSpace-schema.json#/definitions/specification"
                 }
               ]
             }
@@ -137,11 +137,11 @@
                   {
                     "type": "array",
                     "items": {
-                      "$ref": "https://raw.githubusercontent.com/smart-data-models/incubated/refs/heads/master/CROSSSECTOR/DataSovereignty/ParticipantAgent/schema.json#/definitions/Specification"
+                      "$ref": "https://raw.githubusercontent.com/smart-data-models/dataModel.DataSpace/master/DataSpace-schema.json#/definitions/specification"
                     }
                   },
                   {
-                    "$ref": "https://raw.githubusercontent.com/smart-data-models/incubated/refs/heads/master/CROSSSECTOR/DataSovereignty/ParticipantAgent/schema.json#/definitions/Specification"
+                    "$ref": "https://raw.githubusercontent.com/smart-data-models/dataModel.DataSpace/master/DataSpace-schema.json#/definitions/specification"
                   }
                 ]
               },
@@ -192,11 +192,7 @@
                   }
                 ]
               }
-            },
-            "required": [
-              "apiSpecification",
-              "contentType"
-            ]
+            }
           }
         }
       }
