@@ -2,49 +2,49 @@
   "id": "urn:ngsi-ld:ParticipantAgent:FIWARE-DSC-2.28.0",
   "type": "ParticipantAgent",
   "title": {
-    "type": "Property",
+    "type": "Text",
     "value": "FIWARE Data Space Connector"
   },
   "description": {
-    "type": "Property",
+    "type": "Text",
     "value": "An integrated suite of components implementing DSBA recommendations"
   },
   "url": {
-    "type": "Property",
+    "type": "URL",
     "value": "https:/github.com/FIWARE/data-space-connector"
   },
   "hasVersion": {
-    "type": "Property",
+    "type": "Text",
     "value": "2.28.0"
   },
   "maintainer": {
-    "type": "Property",
+    "type": "StructuredValue",
     "value": {
       "name": "FIWARE Foundation"
     }
   },
   "dataspaceProductPurpose": {
-    "type": "Property",
+    "type": "Text",
     "value": "To provide a ready-to-use component for participants to join and interact within a data space."
   },
   "documentation": {
-    "type": "Property",
+    "type": "URL",
     "value": "https://github.com/FIWARE/data-space-connector/blob/main/README.md"
   },
   "license": {
-    "type": "Property",
+    "type": "URL",
     "value": "https://github.com/FIWARE/data-space-connector/blob/main/LICENSE"
   },
   "licenseDeclared": {
-    "type": "Property",
+    "type": "Text",
     "value": "MIT"
   },
   "dataspaceServiceCategory": {
-    "type": "Property",
+    "type": "Text",
     "value": "Participant Agent services"
   },
   "dataspaceService": {
-    "type": "Property",
+    "type": "array",
     "value": [
       "Credential Store",
       "Contract Negotiation",
@@ -53,7 +53,7 @@
     ]
   },
   "dataspaceBuildingBlock": {
-    "type": "Property",
+    "type": "array",
     "value": [
       "Identity Management",
       "Contract and Usage Policies",
@@ -61,11 +61,11 @@
     ]
   },
   "technologyReadinessLevel": {
-    "type": "Property",
+    "type": "Number",
     "value": 8
   },
   "credentialStore": {
-    "type": "Property",
+    "type": "StructuredValue",
     "value": {
       "vcDataModel": {
         "name": "Verifiable Credentials Data Model",
@@ -92,7 +92,7 @@
         }
       },
       "contractNegotiation": {
-        "type": "Property",
+        "type": "StructuredValue",
         "value": {
           "name": "Agreement Management API",
           "standardizedBy": "TMForum",
@@ -101,7 +101,7 @@
         }
       },
       "transferProcess": {
-        "type": "Property",
+        "type": "StructuredValue",
         "value": {
           "protocol": {
             "name": "Dataspace Protocol",
@@ -118,7 +118,7 @@
         }
       },
       "dataPlane": {
-        "type": "Property",
+        "type": "StructuredValue",
         "value": [
           {
             "apiSpecification": {

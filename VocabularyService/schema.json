@@ -8,7 +8,7 @@
   "type": "object",
   "allOf": [
     {
-      "$ref": "https://raw.githubusercontent.com/smart-data-models/dataModelDataSpace/refs/heads/master/CROSSSECTOR/DataSovereignty/data-sovereignty-commons.json#/definitions/DataSovereignity-Commons"
+      "$ref": "https://raw.githubusercontent.com/smart-data-models/dataModel.DataSpace/master/DataSpace-schema.json#/definitions/DataSovereignity-Commons"
     },
     {
       "properties": {

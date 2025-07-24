@@ -3,7 +3,7 @@
   "$id": "https://smart-data-models.github.io/dataModel.DataSpace/ParticipantAgent/schema.json",
   "title": "Smart Data Models - Participant Agent Service",
   "description": "A data model for a Participant Agent (Connector) tool. This tool can implement multiple services like Credential Store, Contract Negotiation, Transfer Process, and Data Plane. It extends the base ToolInformation model.",
-  "schemaVersion": "0.0.1",
+  "$schemaVersion": "0.0.1",
   "modelTags": "",
   "type": "object",
   "allOf": [
