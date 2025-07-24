@@ -3,8 +3,9 @@
   "$id": "https://smart-data-models.github.io/dataModel.DataSpace/VocabularyService/schema.json",
   "title": "Smart Data Models - Vocabulary Service",
   "description": "A data model for a Vocabulary Service tool. This service manages and hosts data models like vocabularies, ontologies, and schemas. It extends the base ToolInformation model.",
-  "schemaVersion": "0.0.1",
+  "$schemaVersion": "0.0.1",
   "modelTags": "",
+  "derivedFrom": "",
   "type": "object",
   "allOf": [
     {
@@ -174,10 +175,6 @@
   ],
   "required": [
     "id",
-    "type",
-    "dataModelSpecificationType",
-    "supportedSyntaxes",
-    "importFormats",
-    "exportFormats"
+    "type"
   ]
 }
