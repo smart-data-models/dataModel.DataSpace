@@ -1,4 +1,11 @@
-notesHeader:
+notesHeader: |
+  Vocabulary services provide an overview of available data models in the data space. 
+  This allows participants of the data space to choose common data models for a particular 
+  application. In the rulebook, some data models can be made mandatory to ensure semantic 
+  interoperability between participants.
+
+  Vocabulary Services can also link these data models to APIs/technical interfaces for data 
+  exchange, providing semantics and syntax.
 
 notesMiddle:
 

@@ -1,4 +1,28 @@
-notesHeader:
+notesHeader: |
+  Participant agent services allow a participant, as the name suggests, to participate in a 
+  data space. These services provide the basic functionality required by every participant 
+  in the data space. Such services play a vital role in ensuring trust in a data space as 
+  they differentiate between a data plane and a control plane. The control plane is key here 
+  as it implements functionalities for identification, publishing of data sets, etc. 
+
+  Within the Participant Agent, several parts can be identified.
+
+  -  The control plane handles user identification, access, and usage policies, while the data 
+     plane handles the actual exchange of data.This implies that the control plane can be 
+     standardised to a high level, using common standards for identification, authentication, etc.
+
+  -  The data plane can be different for each data space and use case depending on the types of
+     data exchange that take place. Some data spaces focus on sharing large datasets, others on 
+     message exchange, and others take an event-based approach. There is no one-size-fits-all, 
+     although some mechanisms (especially in the data interoperability pillar) can assist in 
+     making sure different data planes work together.
+
+  -  The credential store is used to store credentials (identities and attestations) which have 
+     been issued by the validation and verification federation service. This could include 
+     credentials indicating that a participant is a member of a particular data space, for example.
+
+  The credential store is also used to present credentials to other participants in the data space
+  and to validate credentials from others.
 
 notesMiddle:
 
