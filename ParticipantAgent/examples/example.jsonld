@@ -11,9 +11,7 @@
   "dataspaceProductPurpose": "To provide a ready-to-use component for participants to join and interact within a data space.",
   "documentation": "https://github.com/FIWARE/data-space-connector/blob/main/README.md",
   "license": "https://github.com/FIWARE/data-space-connector/blob/main/LICENSE",
-  "licenseDeclared": [
-    "MIT"
-  ],
+  "licenseDeclared": "MIT",
   "dataspaceServiceCategory": "Participant Agent services",
   "dataspaceService": [
     "Credential Store",

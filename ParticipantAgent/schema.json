@@ -23,55 +23,8 @@
           ]
         },
         "credentialStore": {
-          "type": "object",
           "description": "Property. Details of the credential store capabilities.",
-          "properties": {
-            "vcDataModel": {
-              "description": "Property. Details of data model(s) used for Verifiable Credentials.",
-              "minItems": 1,
-              "anyOf": [
-                {
-                  "type": "array",
-                  "items": {
-                    "$ref": "https://raw.githubusercontent.com/smart-data-models/dataModel.DataSpace/master/DataSpace-schema.json#/definitions/specification"
-                  }
-                },
-                {
-                  "$ref": "https://raw.githubusercontent.com/smart-data-models/dataModel.DataSpace/master/DataSpace-schema.json#/definitions/specification"
-                }
-              ]
-            },
-            "vcIssuanceAPI": {
-              "description": "Property. Details of the API(s) used for issuing Verifiable Credentials.",
-              "minItems": 1,
-              "anyOf": [
-                {
-                  "type": "array",
-                  "items": {
-                    "$ref": "https://raw.githubusercontent.com/smart-data-models/dataModel.DataSpace/master/DataSpace-schema.json#/definitions/specification"
-                  }
-                },
-                {
-                  "$ref": "https://raw.githubusercontent.com/smart-data-models/dataModel.DataSpace/master/DataSpace-schema.json#/definitions/specification"
-                }
-              ]
-            },
-            "vcPresentationAPI": {
-              "description": "Property. Details of data API(s) used for issuing Verifiable Credentials.",
-              "minItems": 1,
-              "anyOf": [
-                {
-                  "type": "array",
-                  "items": {
-                    "$ref": "https://raw.githubusercontent.com/smart-data-models/dataModel.DataSpace/master/DataSpace-schema.json#/definitions/specification"
-                  }
-                },
-                {
-                  "$ref": "https://raw.githubusercontent.com/smart-data-models/dataModel.DataSpace/master/DataSpace-schema.json#/definitions/specification"
-                }
-              ]
-            }
-          }
+          "$ref": "https://raw.githubusercontent.com/smart-data-models/dataModel.DataSpace/master/DataSpace-schema.json#/definitions/verifiableCredentials"
         },
         "contractNegotiation": {
           "description": "Property. Details of the contract negotiation capabilities.",
