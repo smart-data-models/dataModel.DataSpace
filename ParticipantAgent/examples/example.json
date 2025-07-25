@@ -9,15 +9,9 @@
     "name": "FIWARE Foundation"
   },
   "dataspaceProductPurpose": "To provide a ready-to-use component for participants to join and interact within a data space.",
-  "documentation": [
-    "https://github.com/FIWARE/data-space-connector/blob/main/README.md"
-  ],
-  "license": [
-    "https://github.com/FIWARE/data-space-connector/blob/main/LICENSE"
-  ],
-  "licenseDeclared": [
-    "MIT"
-  ],
+  "documentation": "https://github.com/FIWARE/data-space-connector/blob/main/README.md",
+  "license": "https://github.com/FIWARE/data-space-connector/blob/main/LICENSE",
+  "licenseDeclared": "MIT",
   "dataspaceServiceCategory": "Participant Agent services",
   "dataspaceService": [
     "Credential Store",
@@ -44,43 +38,33 @@
     "vcIssuanceAPI": {
       "name": "OpenID for Verifiable Credential Issuance",
       "standardizedBy": "OpenID",
-      "conformsTo": [
-        "1.0.15"
-      ],
+      "conformsTo": "1.0.15",
       "homepage": "https://openid.net/specs/openid-4-verifiable-credential-issuance-1_0.html"
     },
     "vcPresentationAPI": {
       "name": "OpenID for Verifiable Presentations",
       "standardizedBy": "OpenID",
-      "conformsTo": [
-        "1.0"
-      ],
+      "conformsTo": "1.0",
       "homepage": "https://openid.net/specs/openid-4-verifiable-presentations-1_0.html"
     }
   },
   "contractNegotiation": {
     "name": "Agreement Management API",
     "standardizedBy": "TMForum",
-    "conformsTo": [
-      "5.0.0"
-    ],
+    "conformsTo": "5.0.0",
     "homepage": "https://www.tmforum.org/oda/open-apis/agreement"
   },
   "transferProcess": {
     "protocol": {
       "name": "Dataspace Protocol",
       "standardizedBy": "DSP",
-      "conformsTo": [
-        "2024-1"
-      ],
+      "conformsTo": "2024-1",
       "homepage": "https://docs.internationaldataspaces.org/dataspace-protocol/"
     },
     "authorization": {
       "name": "ODRL",
       "standardizedBy": "W3C",
-      "conformsTo": [
-        "2.2"
-      ],
+      "conformsTo": "2.2",
       "homepage": "https://www.w3.org/TR/odrl-model/"
     }
   },
@@ -112,9 +96,7 @@
       "apiSpecification": {
         "name": "HTTP File Download",
         "standardizedBy": "IETF",
-        "conformsTo": [
-          "RFC7231"
-        ],
+        "conformsTo": "RFC7231",
         "homepage": "https://tools.ietf.org/html/rfc7231"
       },
       "accepts": [],

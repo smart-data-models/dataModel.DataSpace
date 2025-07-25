@@ -57,7 +57,7 @@
     "value": 9
   },
   "dataModelDomain": {
-    "type": "array",
+    "type": "Array",
     "value": [
       "Healthcare",
       "Finance"
@@ -77,7 +77,7 @@
     ]
   },
   "importFormats": {
-    "type": "array",
+    "type": "Array",
     "value": [
       "application/rdf+xml",
       "text/turtle",
@@ -101,7 +101,7 @@
     "value": "Role-based access control, working groups workflows, change request management."
   },
   "publicationAccessibility": {
-    "type": "array",
+    "type": "Array",
     "value": [
       "Persistent URIs",
       "SPARQL endpoint",

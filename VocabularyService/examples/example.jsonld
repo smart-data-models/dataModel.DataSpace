@@ -10,22 +10,12 @@
     "url": "https://semanticsol.com"
   },
   "dataspaceProductPurpose": "To provide a centralized, governed repository for data models, ensuring semantic interoperability across the data space.",
-  "documentation": [
-    "https://docs.semanticsol.com/ontomanager"
-  ],
-  "license": [
-    "https://example.com/licenses/commercial-eula"
-  ],
-  "licenseDeclared": [
-    "UNLICENSED"
-  ],
+  "documentation": "https://docs.semanticsol.com/ontomanager",
+  "license": "https://example.com/licenses/commercial-eula",
+  "licenseDeclared": "UNLICENSED",
   "dataspaceServiceCategory": "Federation services",
-  "dataspaceService": [
-    "Vocabulary Services"
-  ],
-  "dataspaceBuildingBlock": [
-    "Semantic Interoperability"
-  ],
+  "dataspaceService": "Vocabulary Services",
+  "dataspaceBuildingBlock": "Semantic Interoperability",
   "technologyReadinessLevel": 9,
   "dataModelDomain": [
     "Healthcare",
@@ -55,14 +45,8 @@
     "SPARQL endpoint",
     "Web Portal"
   ],
-  "validationCapabilities": [
-    "SHACL validator"
-  ],
-  "supportedStandards": [
-    "ISO 15926"
-  ],
+  "validationCapabilities": "SHACL validator",
+  "supportedStandards": "ISO 15926",
   "mappingFunctionalities": "Provides a graphical interface for creating and managing mappings between different ontologies.",
-  "@context": [
-    "https://raw.githubusercontent.com/smart-data-models/dataModel.Dataspace/master/context.jsonld"
-  ]
+  "@context": "https://smart-data-models.github.io/dataModel.DataSpace/context.jsonld"
 }

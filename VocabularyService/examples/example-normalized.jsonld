@@ -120,7 +120,5 @@
     "type": "Property",
     "value": "Provides a graphical interface for creating and managing mappings between different ontologies."
   }, 
-  "@context": [
-    "https://raw.githubusercontent.com/smart-data-models/dataModel.Dataspace/master/context.jsonld"
-  ]
+  "@context": "https://smart-data-models.github.io/dataModel.DataSpace/context.jsonld"
 }

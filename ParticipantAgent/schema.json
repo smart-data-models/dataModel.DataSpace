@@ -146,7 +146,6 @@
                 ]
               },
               "accepts": {
-                "type": "array",
                 "description": "Property. List of MIME types the data plane can accept for import. Corresponds to HTTP Accept header.",
                 "anyOf": [
                   {
@@ -161,7 +160,6 @@
                 ]
               },
               "contentType": {
-                "type": "array",
                 "description": "Property. List of MIME types the data plane can export. Corresponds to HTTP Content-Type header.",
                 "anyOf": [
                   {
@@ -176,7 +174,6 @@
                 ]
               },
               "openAPI": {
-                "type": "array",
                 "description": "Property. Link(s) to a machine-readable interface of the API. Corresponds to tcat:openAPI.",
                 "anyOf": [
                   {
