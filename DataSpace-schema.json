@@ -328,11 +328,18 @@
           "description": "Property. The standardization body. Corresponds to tcat:standardizedBy"
         },
         "conformsTo": {
-          "type": "array",
           "description": "Property. Version(s) of the specification it conforms to. Corresponds to dcterms:conformsTo",
-          "items": {
-            "type": "string"
-          }
+          "anyOf": [
+            {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            {
+              "type": "string"
+            }
+          ]
         },
         "homepage": {
           "type": "string",
