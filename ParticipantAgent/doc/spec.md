@@ -4,7 +4,7 @@
 ========================<!-- /10-Header -->  
 <!-- 15-License -->  
 [Open License](https://github.com/smart-data-models//dataModel.DataSpace/blob/master/ParticipantAgent/LICENSE.md)  
-[document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+[document generated automatically](https://docs.google.com/presentation/d/e/2PAC-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 <!-- /15-License -->  
 <!-- 20-Description -->  
 Global description: **A data model for a Participant Agent (Connector) tool. This tool can implement multiple services like Credential Store, Contract Negotiation, Transfer Process, and Data Plane. It extends the base ToolInformation model.**  
@@ -14,20 +14,26 @@
 
 ## List of properties  
 
-<sup><sub>[*] If there is not a type in an attribute is because it could have several types or different formats/patterns</sub></sup>  
-- `additionalBuildingBlock[*]`: Additional building blocks functions offered by this tool. Corresponds to tcat:additionalBuildingBlock  - `additionalBuildingBlockDescription[*]`: Textual description of additional functionalities. Corresponds to tcat:additionalBuildingBlockDescription  - `businessOfferings[*]`: Description of business offerings like managed services, SaaS, or support. Corresponds to tcat:businessOfferings  - `contractNegotiation[*]`: Details of the contract negotiation capabilities.  - `credentialStore[object]`: Details of the credential store capabilities.  	- `vcDataModel[*]`: Details of data model(s) used for Verifiable Credentials.    
-	- `vcIssuanceAPI[*]`: Details of the API(s) used for issuing Verifiable Credentials.    
-	- `vcPresentationAPI[*]`: Details of data API(s) used for issuing Verifiable Credentials.    
-- `dataPlane[array]`: Details of the data plane capabilities, defining one or more data exchange APIs.  - `dataspaceBuildingBlock[*]`: The data space building block(s) this tool is related to. Corresponds to tcat:dataspaceBuildingBlock  - `dataspaceProductPurpose[string]`: Description of how the implementation contributes to DSSC's objectives. Corresponds to tcat:dataspaceProductPurpose  - `dataspaceService[*]`: The specific data space service(s) this tool implements. Corresponds to tcat:dataspaceService  - `dataspaceServiceCategory[string]`: The category of the data space service. Corresponds to tcat:dataspaceServiceCategory  - `dependencies[*]`: Dependencies or prerequisites on other tools or components  - `deploymentsInOperation[*]`: Overview or links to usage/deployments of the tool in operations. Corresponds to tcat:existingDeployments  - `description[string]`: A brief overview of the primary focus and key features of the implementation. Corresponds to dc:description  - `documentation[*]`: Direct links to relevant documents (product page, software repository, API spec, etc.). Corresponds to schema:documentation  - `domain[*]`: The domain(s), sector(s), or industry/ies for which the tool is relevant  - `functionalApplicationArea[*]`: The applications for which the tool is intended  - `geographicalApplicationArea[*]`: The geographical region for which the tool is intended (e.g., global, Europe)  - `hasVersion[string]`: The versions of the implementation. Values must adhere to SemVer 2.0. Corresponds to dc:hasVersion  - `id[*]`: Unique identifier of the entity  - `image[*]`: Relevant pictures or screenshots of the tool’s user interface. Corresponds to schema:image  - `keywords[*]`: Keywords that categorize the tool, preferably from a controlled vocabulary. Corresponds to schema:keywords  - `license[*]`: Links to the license details for accessing and using the tool. Corresponds to schema:license  - `licenseDeclared[*]`: The machine-searchable license type. Value must adhere to SPDX license list (https://spdx.org/licenses/). Corresponds to spdx.org:licenseDeclared  - `maintainer[object]`: The organization that maintains the implementation. Corresponds to schema:maintainer  	- `logo[uri]`: URL of the organization's logo. Corresponds to schema:logo    
-	- `name[string]`: Name of the organization    
-	- `url[uri]`: URL of the organization's website    
-- `similarTools[*]`: A list of similar or competing tools  - `supportingAttachments[array]`: Additional attachments or links for more information  - `technologyReadinessLevel[number]`: The Technology Readiness Level (TRL) of the tool. Corresponds to tcat:technologyReadiness  - `title[string]`: The name of the tool/implementation. Corresponds to dc:title  - `transferProcess[object]`: Details of the transfer process capabilities.  	- `authorization[*]`: Details of authorization mechanisms used behind the transfer process.    
-	- `protocol[*]`: Details of protocol(s) defining the transfer process.    
-- `trlJustification[string]`: Justification for the declared TRL. Corresponds to tcat:technologyReadinessDescription  - `type[string]`: NGSI entity type. It has to be ParticipantAgent.  - `url[uri]`: A URL to a webpage with more information about the tool. Corresponds to foaf:homepage or schema:url  <!-- /30-PropertiesList -->  
+<sup><sub>[*] If an attribute does not have a type specified, it's because it could have several types or different formats/patterns</sub></sup>  
+- `additionalBuildingBlock[*]`: Additional building blocks functions offered by this tool. Corresponds to tcat:additionalBuildingBlock  - `additionalBuildingBlockDescription[*]`: Textual description of additional features. Corresponds to tcat:additionalBuildingBlockDescription  - `businessOfferings[*]`: Description of business offerings like managed services, SaaS, or support. Corresponds to tcat:businessOfferings  - `contractNegotiation[*]`: Details of the contract negotiation capabilities.  - `credentialStore[object]`: Error: An unexpected error occurred during translation.  	- `vcDataModel[*]`: Error: An unexpected error occurred during translation.    
+	- `vcIssuanceAPI[*]`: Error: An unexpected error occurred during translation.    
+	- `vcPresentationAPI[*]`: Error: An unexpected error occurred during translation.    
+- `dataPlane[array]`: Error: An unexpected error occurred during translation.  - `dataspaceBuildingBlock[*]`: Error: An unexpected error occurred during translation.  - `dataspaceProductPurpose[string]`: Error: An unexpected error occurred during translation.  - `dataspaceService[*]`: Error: An unexpected error occurred during translation.  - `dataspaceServiceCategory[string]`: Error: An unexpected error occurred during translation.  - `dependencies[*]`: Dependencies or prerequisites on other tools or components  - `deploymentsInOperation[*]`: Error: An unexpected error occurred during translation.  - `description[string]`: Error: An unexpected error occurred during translation.  - `documentation[*]`: Error: An unexpected error occurred during translation.  - `domain[*]`: Error: An unexpected error occurred during translation.  - `functionalApplicationArea[*]`: Error: An unexpected error occurred during translation.  - `geographicalApplicationArea[*]`: Error: An unexpected error occurred during translation.  - `hasVersion[string]`: Error: An unexpected error occurred during translation.  - `id[*]`: Error: An unexpected error occurred during translation.  - `image[*]`: Error: An unexpected error occurred during translation.  - `keywords[*]`: Error: An unexpected error occurred during translation.  - `license[*]`: Error: An unexpected error occurred during translation.  - `licenseDeclared[*]`: Error: An unexpected error occurred during translation.  - `maintainer[object]`: Error: An unexpected error occurred during translation.  	- `logo[uri]`: Error: An unexpected error occurred during translation.    
+	- `name[string]`: Error: An unexpected error occurred during translation.    
+	- `url[uri]`: Error: An unexpected error occurred during translation.    
+- `similarTools[*]`: Error: An unexpected error occurred during translation.  - `supportingAttachments[array]`: Error: An unexpected error occurred during translation.  - `technologyReadinessLevel[number]`: Error: An unexpected error occurred during translation.  - `title[string]`: Error: An unexpected error occurred during translation.  - `transferProcess[object]`: Error: An unexpected error occurred during translation.  	- `authorization[*]`: Error: An unexpected error occurred during translation.    
+	- `protocol[*]`: Error: An unexpected error occurred during translation.    
+- `trlJustification[string]`: Error: An unexpected error occurred during translation.  - `type[string]`: Error: An unexpected error occurred during translation.  - `url[uri]`: Error: An unexpected error occurred during translation.  <!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 Required properties  
 - `id`  - `type`  <!-- /35-RequiredProperties -->  
 <!-- 40-NotesYaml -->  
+Participant agent services allow a participant, as the name suggests, to participate in a data space. These services provide the basic functionality required by every participant in the data space. Such services play a vital role in ensuring trust in a data space as they differentiate between a data plane and a control plane. The control plane is key here as it implements functionalities for identification, publishing of datasets, etc.  
+Within the Participant Agent, several parts can be identified.  
+- The control plane handles user identification, access, and usage policies, while the data plane handles the actual exchange of data. This implies that the control plane can be standardized to a high level, using common standards for identification, authentication, etc.  
+- The data plane can be different for each data space and use case depending on the types of data exchange that take place. Some data spaces focus on sharing large datasets, others on message exchange, and others take an event-based approach. There is no one-size-fits-all, although some mechanisms (especially in the data interoperability pillar) can assist in making sure different data planes work together.  
+- The credential store is used to store credentials (identities and attestations) that have been issued by the validation and verification federation service. This could include credentials indicating that a participant is a member of a particular data space, for example.  
+The credential store is also used to present credentials to other participants in the data space and to validate credentials from others.  
 <!-- /40-NotesYaml -->  
 <!-- 50-DataModelHeader -->  
 ## Data Model description of properties  
@@ -765,9 +771,9 @@ ParticipantAgent:
 <!-- 70-MiddleNotes -->  
 <!-- /70-MiddleNotes -->  
 <!-- 80-Examples -->  
-## Example payloads    
+## Example payloads  
 #### ParticipantAgent NGSI-v2 key-values Example    
-Here is an example of a ParticipantAgent in JSON-LD format as key-values. This is compatible with NGSI-v2 when  using `options=keyValues` and returns the context data of an individual entity.  
+Here is an example of a ParticipantAgent in JSON-LD format as key-values. This is compatible with NGSI-v2 when using `options=keyValues` and returns the context data of an individual entity.  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
@@ -781,15 +787,9 @@ ParticipantAgent:
     "name": "FIWARE Foundation"  
   },  
   "dataspaceProductPurpose": "To provide a ready-to-use component for participants to join and interact within a data space.",  
-  "documentation": [  
-    "https://github.com/FIWARE/data-space-connector/blob/main/README.md"  
-  ],  
-  "license": [  
-    "https://github.com/FIWARE/data-space-connector/blob/main/LICENSE"  
-  ],  
-  "licenseDeclared": [  
-    "MIT"  
-  ],  
+  "documentation": "https://github.com/FIWARE/data-space-connector/blob/main/README.md",  
+  "license": "https://github.com/FIWARE/data-space-connector/blob/main/LICENSE",  
+  "licenseDeclared": "MIT",  
   "dataspaceServiceCategory": "Participant Agent services",  
   "dataspaceService": [  
     "Credential Store",  
@@ -816,43 +816,33 @@ ParticipantAgent:
     "vcIssuanceAPI": {  
       "name": "OpenID for Verifiable Credential Issuance",  
       "standardizedBy": "OpenID",  
-      "conformsTo": [  
-        "1.0.15"  
-      ],  
+      "conformsTo": "1.0.15",  
       "homepage": "https://openid.net/specs/openid-4-verifiable-credential-issuance-1_0.html"  
     },  
     "vcPresentationAPI": {  
       "name": "OpenID for Verifiable Presentations",  
       "standardizedBy": "OpenID",  
-      "conformsTo": [  
-        "1.0"  
-      ],  
+      "conformsTo": "1.0",  
       "homepage": "https://openid.net/specs/openid-4-verifiable-presentations-1_0.html"  
     }  
   },  
   "contractNegotiation": {  
     "name": "Agreement Management API",  
     "standardizedBy": "TMForum",  
-    "conformsTo": [  
-      "5.0.0"  
-    ],  
+    "conformsTo": "5.0.0",  
     "homepage": "https://www.tmforum.org/oda/open-apis/agreement"  
   },  
   "transferProcess": {  
     "protocol": {  
       "name": "Dataspace Protocol",  
       "standardizedBy": "DSP",  
-      "conformsTo": [  
-        "2024-1"  
-      ],  
+      "conformsTo": "2024-1",  
       "homepage": "https://docs.internationaldataspaces.org/dataspace-protocol/"  
     },  
     "authorization": {  
       "name": "ODRL",  
       "standardizedBy": "W3C",  
-      "conformsTo": [  
-        "2.2"  
-      ],  
+      "conformsTo": "2.2",  
       "homepage": "https://www.w3.org/TR/odrl-model/"  
     }  
   },  
@@ -884,9 +874,7 @@ ParticipantAgent:
       "apiSpecification": {  
         "name": "HTTP File Download",  
         "standardizedBy": "IETF",  
-        "conformsTo": [  
-          "RFC7231"  
-        ],  
+        "conformsTo": "RFC7231",  
         "homepage": "https://tools.ietf.org/html/rfc7231"  
       },  
       "accepts": [],  
@@ -1066,8 +1054,8 @@ ParticipantAgent:
 }  
 ```  
 </details>  
-#### ParticipantAgent NGSI-LD key-values Example    
-Here is an example of a ParticipantAgent in JSON-LD format as key-values. This is compatible with NGSI-LD when  using `options=keyValues` and returns the context data of an individual entity.  
+#### ParticipantAgent NGSI-LD key-values Example   
+Here is an example of a ParticipantAgent in JSON-LD format as key-values. This is compatible with NGSI-LD when using `options=keyValues` and returns the context data of an individual entity.  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
@@ -1081,15 +1069,9 @@ ParticipantAgent:
     "name": "FIWARE Foundation"  
   },  
   "dataspaceProductPurpose": "To provide a ready-to-use component for participants to join and interact within a data space.",  
-  "documentation": [  
-    "https://github.com/FIWARE/data-space-connector/blob/main/README.md"  
-  ],  
-  "license": [  
-    "https://github.com/FIWARE/data-space-connector/blob/main/LICENSE"  
-  ],  
-  "licenseDeclared": [  
-    "MIT"  
-  ],  
+  "documentation": "https://github.com/FIWARE/data-space-connector/blob/main/README.md",  
+  "license": "https://github.com/FIWARE/data-space-connector/blob/main/LICENSE",  
+  "licenseDeclared": "MIT",  
   "dataspaceServiceCategory": "Participant Agent services",  
   "dataspaceService": [  
     "Credential Store",  
@@ -1107,7 +1089,7 @@ ParticipantAgent:
     "vcDataModel": {  
       "name": "Verifiable Credentials Data Model",  
       "standardizedBy": "W3C",  
-      "conformsTo": [  
+      "conformsTo": [   
         "1.1",  
         "2.0"  
       ],  
@@ -1116,43 +1098,33 @@ ParticipantAgent:
     "vcIssuanceAPI": {  
       "name": "OpenID for Verifiable Credential Issuance",  
       "standardizedBy": "OpenID",  
-      "conformsTo": [  
-        "1.0.15"  
-      ],  
+      "conformsTo": "1.0.15",  
       "homepage": "https://openid.net/specs/openid-4-verifiable-credential-issuance-1_0.html"  
     },  
     "vcPresentationAPI": {  
       "name": "OpenID for Verifiable Presentations",  
       "standardizedBy": "OpenID",  
-      "conformsTo": [  
-        "1.0"  
-      ],  
+      "conformsTo":   "1.0",  
       "homepage": "https://openid.net/specs/openid-4-verifiable-presentations-1_0.html"  
     }  
   },  
   "contractNegotiation": {  
     "name": "Agreement Management API",  
     "standardizedBy": "TMForum",  
-    "conformsTo": [  
-      "5.0.0"  
-    ],  
+    "conformsTo": "5.0.0",  
     "homepage": "https://www.tmforum.org/oda/open-apis/agreement"  
   },  
   "transferProcess": {  
     "protocol": {  
       "name": "Dataspace Protocol",  
       "standardizedBy": "DSP",  
-      "conformsTo": [  
-        "2024-1"  
-      ],  
+      "conformsTo": "2024-1",  
       "homepage": "https://docs.internationaldataspaces.org/dataspace-protocol/"  
     },  
     "authorization": {  
       "name": "ODRL",  
       "standardizedBy": "W3C",  
-      "conformsTo": [  
-        "2.2"  
-      ],  
+      "conformsTo":   "2.2",  
       "homepage": "https://www.w3.org/TR/odrl-model/"  
     }  
   },  
@@ -1176,17 +1148,13 @@ ParticipantAgent:
         "application/ld+json",  
         "application/geo+json"  
       ],  
-      "openAPI": [  
-        "https://forge.etsi.org/rep/cim/ngsi-ld-openapi/-/raw/v1.9.1/ngsi-ld-api-v1.9.1.yaml"  
-      ]  
+      "openAPI": "https://forge.etsi.org/rep/cim/ngsi-ld-openapi/-/raw/v1.9.1/ngsi-ld-api-v1.9.1.yaml"  
     },  
     {  
       "apiSpecification": {  
         "name": "HTTP File Download",  
         "standardizedBy": "IETF",  
-        "conformsTo": [  
-          "RFC7231"  
-        ],  
+        "conformsTo": "RFC7231",  
         "homepage": "https://tools.ietf.org/html/rfc7231"  
       },  
       "accepts": [],  
@@ -1196,14 +1164,12 @@ ParticipantAgent:
       ]  
     }  
   ],  
-  "@context": [  
-    "https://raw.githubusercontent.com/smart-data-models/dataModel.Dataspace/master/context.jsonld"  
-  ]  
+  "@context": "https://smart-data-models.github.io/dataModel.DataSpace/context.jsonld"  
 }  
 ```  
 </details>  
-#### ParticipantAgent NGSI-LD normalized Example    
-Here is an example of a ParticipantAgent in JSON-LD format as normalized. This is compatible with NGSI-LD when not using options and returns the context data of an individual entity.  
+Error: An unexpected error occurred during translation.  
+Error: An unexpected error occurred during translation.  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
@@ -1366,16 +1332,14 @@ ParticipantAgent:
       }  
     }  
   },  
-  "@context": [  
-    "https://raw.githubusercontent.com/smart-data-models/dataModel.Dataspace/master/context.jsonld"  
-  ]  
+  "@context": "https://smart-data-models.github.io/dataModel.DataSpace/context.jsonld"  
 }  
 ```  
 </details><!-- /80-Examples -->  
 <!-- 90-FooterNotes -->  
 <!-- /90-FooterNotes -->  
 <!-- 95-Units -->  
-See [FAQ 10](https://smartdatamodels.org/index.php/faqs/) to get an answer on how to deal with magnitude units  
+Error: An unexpected error occurred during translation.  
 <!-- /95-Units -->  
 <!-- 97-LastFooter -->  
 ---  
