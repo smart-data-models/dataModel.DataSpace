@@ -1,3 +1,47 @@
 /* (Beta) Export of data model VocabularyService of the subject dataModel.DataSpace for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
-CREATE TYPE dataModelSpecificationType_type AS ENUM ('Vocabulary','Ontology','Application Profile','Data Schema');CREATE TYPE dataModelVersioning_type AS ENUM ('Semantic Versioning','Full History','None');CREATE TYPE dataspaceServiceCategory_type AS ENUM ('Federation services','Participant Agent services','Value Creation services');CREATE TYPE VocabularyService_type AS ENUM ('VocabularyService');
-CREATE TABLE VocabularyService (dataModelSpecificationType dataModelSpecificationType_type, dataModelVersioning dataModelVersioning_type, dataspaceProductPurpose TEXT, dataspaceServiceCategory dataspaceServiceCategory_type, description TEXT, governanceFeatures TEXT, hasVersion TEXT, id TEXT PRIMARY KEY, maintainer JSON, mappingFunctionalities TEXT, referenceDatasetManagement TEXT, supportingAttachments JSON, technologyReadinessLevel NUMERIC, title TEXT, trlJustification TEXT, type VocabularyService_type, url TEXT);
+CREATE TYPE dataModelSpecificationType_type AS ENUM ('Vocabulary', 'Ontology', 'Application Profile', 'Data Schema');
+CREATE TYPE dataModelVersioning_type AS ENUM ('Semantic Versioning', 'Full History', 'None');
+CREATE TYPE dataspaceServiceCategory_type AS ENUM ('Federation services', 'Participant Agent services', 'Value Creation services');
+CREATE TYPE VocabularyService_type AS ENUM ('VocabularyService');
+CREATE TABLE VocabularyService (
+  "additionalBuildingBlock" JSON,
+  "additionalBuildingBlockDescription" JSON,
+  "businessOfferings" JSON,
+  "dataModelDomain" JSON,
+  "dataModelSpecificationType" dataModelSpecificationType_type,
+  "dataModelVersioning" dataModelVersioning_type,
+  "dataspaceBuildingBlock" JSON,
+  "dataspaceProductPurpose" TEXT,
+  "dataspaceService" JSON,
+  "dataspaceServiceCategory" dataspaceServiceCategory_type,
+  "dependencies" JSON,
+  "deploymentsInOperation" JSON,
+  "description" TEXT,
+  "documentation" JSON,
+  "domain" JSON,
+  "exportFormats" JSON,
+  "functionalApplicationArea" JSON,
+  "geographicalApplicationArea" JSON,
+  "governanceFeatures" TEXT,
+  "hasVersion" TEXT,
+  "id" TEXT PRIMARY KEY,
+  "image" JSON,
+  "importFormats" JSON,
+  "keywords" JSON,
+  "license" JSON,
+  "licenseDeclared" JSON,
+  "maintainer" JSON,
+  "mappingFunctionalities" TEXT,
+  "publicationAccessibility" JSON,
+  "referenceDatasetManagement" TEXT,
+  "similarTools" JSON,
+  "supportedStandards" JSON,
+  "supportedSyntaxes" JSON,
+  "supportingAttachments" JSON,
+  "technologyReadinessLevel" NUMERIC,
+  "title" TEXT,
+  "trlJustification" TEXT,
+  "type" VocabularyService_type,
+  "url" TEXT,
+  "validationCapabilities" JSON
+);
