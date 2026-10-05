@@ -24,7 +24,7 @@
         },
         "credentialStore": {
           "description": "Property. Details of the credential store capabilities.",
-          "$ref": "https://raw.githubusercontent.com/smart-data-models/dataModel.DataSpace/master/DataSpace-schema.json#/definitions/verifiableCredentials"
+          "$ref": "https://raw.githubusercontent.com/smart-data-models/dataModel.DataSpace/master/DataSpace-schema.json#//verifiableCredentials"
         },
         "contractNegotiation": {
           "description": "Property. Details of the contract negotiation capabilities.",
