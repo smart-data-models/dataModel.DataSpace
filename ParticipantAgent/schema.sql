@@ -1,3 +1,37 @@
 /* (Beta) Export of data model ParticipantAgent of the subject dataModel.DataSpace for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
-CREATE TYPE dataspaceServiceCategory_type AS ENUM ('Federation services','Participant Agent services','Value Creation services');CREATE TYPE ParticipantAgent_type AS ENUM ('ParticipantAgent');
-CREATE TABLE ParticipantAgent (credentialStore JSON, dataPlane JSON, dataspaceProductPurpose TEXT, dataspaceServiceCategory dataspaceServiceCategory_type, description TEXT, hasVersion TEXT, id TEXT PRIMARY KEY, maintainer JSON, supportingAttachments JSON, technologyReadinessLevel NUMERIC, title TEXT, transferProcess JSON, trlJustification TEXT, type ParticipantAgent_type, url TEXT);
+CREATE TYPE dataspaceServiceCategory_type AS ENUM ('Federation services', 'Participant Agent services', 'Value Creation services');
+CREATE TYPE ParticipantAgent_type AS ENUM ('ParticipantAgent');
+CREATE TABLE ParticipantAgent (
+  "additionalBuildingBlock" JSON,
+  "additionalBuildingBlockDescription" JSON,
+  "businessOfferings" JSON,
+  "contractNegotiation" JSON,
+  "credentialStore" JSON,
+  "dataPlane" JSON,
+  "dataspaceBuildingBlock" JSON,
+  "dataspaceProductPurpose" TEXT,
+  "dataspaceService" JSON,
+  "dataspaceServiceCategory" dataspaceServiceCategory_type,
+  "dependencies" JSON,
+  "deploymentsInOperation" JSON,
+  "description" TEXT,
+  "documentation" JSON,
+  "domain" JSON,
+  "functionalApplicationArea" JSON,
+  "geographicalApplicationArea" JSON,
+  "hasVersion" TEXT,
+  "id" TEXT PRIMARY KEY,
+  "image" JSON,
+  "keywords" JSON,
+  "license" JSON,
+  "licenseDeclared" JSON,
+  "maintainer" JSON,
+  "similarTools" JSON,
+  "supportingAttachments" JSON,
+  "technologyReadinessLevel" NUMERIC,
+  "title" TEXT,
+  "transferProcess" JSON,
+  "trlJustification" TEXT,
+  "type" ParticipantAgent_type,
+  "url" TEXT
+);
