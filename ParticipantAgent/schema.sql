@@ -1,5 +1,5 @@
 /* (Beta) Export of data model ParticipantAgent of the subject dataModel.DataSpace for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
-CREATE TYPE dataspaceServiceCategory_type AS ENUM ('Federation services', 'Participant Agent services', 'Value Creation services');
+CREATE TYPE ParticipantAgent_dataspaceServiceCategory_type AS ENUM ('Federation services', 'Participant Agent services', 'Value Creation services');
 CREATE TYPE ParticipantAgent_type AS ENUM ('ParticipantAgent');
 CREATE TABLE ParticipantAgent (
   "additionalBuildingBlock" JSON,
@@ -11,7 +11,7 @@ CREATE TABLE ParticipantAgent (
   "dataspaceBuildingBlock" JSON,
   "dataspaceProductPurpose" TEXT,
   "dataspaceService" JSON,
-  "dataspaceServiceCategory" dataspaceServiceCategory_type,
+  "dataspaceServiceCategory" ParticipantAgent_dataspaceServiceCategory_type,
   "dependencies" JSON,
   "deploymentsInOperation" JSON,
   "description" TEXT,
