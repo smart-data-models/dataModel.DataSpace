@@ -1,19 +1,19 @@
 /* (Beta) Export of data model VocabularyService of the subject dataModel.DataSpace for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
-CREATE TYPE dataModelSpecificationType_type AS ENUM ('Vocabulary', 'Ontology', 'Application Profile', 'Data Schema');
-CREATE TYPE dataModelVersioning_type AS ENUM ('Semantic Versioning', 'Full History', 'None');
-CREATE TYPE dataspaceServiceCategory_type AS ENUM ('Federation services', 'Participant Agent services', 'Value Creation services');
+CREATE TYPE VocabularyService_dataModelSpecificationType_type AS ENUM ('Vocabulary', 'Ontology', 'Application Profile', 'Data Schema');
+CREATE TYPE VocabularyService_dataModelVersioning_type AS ENUM ('Semantic Versioning', 'Full History', 'None');
+CREATE TYPE VocabularyService_dataspaceServiceCategory_type AS ENUM ('Federation services', 'Participant Agent services', 'Value Creation services');
 CREATE TYPE VocabularyService_type AS ENUM ('VocabularyService');
 CREATE TABLE VocabularyService (
   "additionalBuildingBlock" JSON,
   "additionalBuildingBlockDescription" JSON,
   "businessOfferings" JSON,
   "dataModelDomain" JSON,
-  "dataModelSpecificationType" dataModelSpecificationType_type,
-  "dataModelVersioning" dataModelVersioning_type,
+  "dataModelSpecificationType" VocabularyService_dataModelSpecificationType_type,
+  "dataModelVersioning" VocabularyService_dataModelVersioning_type,
   "dataspaceBuildingBlock" JSON,
   "dataspaceProductPurpose" TEXT,
   "dataspaceService" JSON,
-  "dataspaceServiceCategory" dataspaceServiceCategory_type,
+  "dataspaceServiceCategory" VocabularyService_dataspaceServiceCategory_type,
   "dependencies" JSON,
   "deploymentsInOperation" JSON,
   "description" TEXT,
